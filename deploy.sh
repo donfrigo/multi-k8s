@@ -16,5 +16,5 @@ echo "push finished"
 echo "starting apply"
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=donfrigo/multi-server:$SHA
-kubectl set image deployments/client-deployment server=donfrigo/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=donfrigo/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=donfrigo/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=donfrigo/multi-worker:$SHA
